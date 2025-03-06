@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+
+.partners {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: white; // Light background
+
+    &__heading {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: #0098ee; // Blue color for heading
+        margin-bottom: 1rem;
+    }
+
+    &__subheading {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 1.2rem;
+        color: #0098ee;
+        margin-bottom: 2rem;
+    }
+
+    &__slider {
+        width: 100%;
+        // max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    &__slide {
+        padding: 0 1rem;
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__logo {
+        width: 200px; // Fixed width for logos
+        height: 200px; // Fixed height for logos
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white; // White background for logos
+        border-radius: 8px; // Rounded corners
+        // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Subtle shadow
+        padding: 1rem;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; // Ensure logos fit properly
+        }
+    }
+
+    // Dots styling
+    .slick-dots {
+        bottom: -30px;
+
+        li {
+            margin: 0 4px;
+
+            button:before {
+                font-size: 12px;
+                color: #0098ee; // Blue color for dots
+            }
+
+            &.slick-active button:before {
+                color: #007bff; // Darker blue for active dot
+            }
+        }
+    }
+
+    // Responsive Design
+    @media (max-width: 768px) {
+        &__heading {
+            font-size: 2rem;
+        }
+
+        &__subheading {
+            font-size: 1rem;
+        }
+
+        &__logo {
+            width: 120px;
+            height: 80px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__logos {
+            flex-wrap: wrap; // Wrap logos on small screens
+            gap: 0.5rem;
+        }
+
+        &__logo {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

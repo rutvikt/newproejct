@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+.hireme {
+  display: flex;
+  width: 100%;
+  padding: 0;
+//   background-color: #f8f8f8; // Light background
+
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack divs vertically on smaller screens
+  }
+}
+
+/* Left Section Styles */
+.hireme-left {
+  width: 50%;
+  padding: 2rem;
+  background-color: #0098ee; // Blue background
+  color: white;
+
+  @media (max-width: 768px) {
+    width: 100%; // Full width on mobile
+  }
+
+  &__heading {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2.5rem; // Larger font size for heading
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem; // Smaller font size for mobile
+    }
+  }
+
+  &__shows {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__show {
+    font-size: 1.4rem; // Default font size for shows
+    font-weight: 300;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &::before {
+      content: "•";
+      color: white;
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem; // Smaller font size for mobile
+    }
+  }
+}
+
+/* Right Section Styles */
+.hireme-right {
+  font-family: "Noto Sans", sans-serif;
+  width: 50%;
+  padding: 2rem;
+  background-color: #f8f5f5; // White background
+  text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%; // Full width on mobile
+  }
+
+  &__heading {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2.5rem; // Larger font size for heading
+    font-weight: 300;
+    color: #0098ee;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem; // Smaller font size for mobile
+    }
+  }
+
+  &__text {
+    font-size: 1.3rem; // Default font size for text
+    font-weight: 300;
+    color: #0098ee;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem; // Smaller font size for mobile
+    }
+  }
+
+  &__button {
+    background-color: white;
+    color: #0098ee;
+    font-size: 1.3rem; // Default font size for button
+    font-weight: 300;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #0098ee;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+
+    &:hover {
+      background-color:#0098ee ;
+      color: white;
+      border: 1px solid #0098ee;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem; // Smaller font size for mobile
+    }
+  }
+}

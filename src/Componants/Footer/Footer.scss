@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: 'Mars Bold';
+    src: url('../../assets/Fonts/Mars\ Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    background-color: white;
+    // border-top: 1px solid #ddd;
+    flex-wrap: wrap; // Ensures responsiveness
+
+    &__section {
+        flex: 1;
+        min-width: 200px;
+        margin: 0 1rem;
+    }
+
+    // Extra margin for the first section
+    &__first {
+        margin-right: 4rem; // Adjust this value for more or less spacing
+    }
+
+    &__heading {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        color: #0098ee;
+    }
+
+    &__subheading {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 350;
+        margin-bottom: 0.8rem;
+        color: #0098ee;
+    }
+
+    &__text {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: black;
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__logo {
+        font-family: "Mars Bold", sans-serif;
+        font-size: 2rem;
+        margin-top: 3rem;
+        font-weight: 300;
+        color: #0098ee;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 2rem 10%;
+
+        &__section {
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        &__first {
+            margin-bottom: 2rem; // More gap in mobile view
+        }
+
+        &__heading {
+            font-size: 1.5rem;
+        }
+
+        &__subheading {
+            font-size: 1.2rem;
+        }
+
+        &__text {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+.increment {
+  background-color: #0098ee;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+
+  .main-in {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .counting {
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-weight: 400;
+
+    h2 {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .increment {
+    gap: 50px;
+  }
+
+  .main-in {
+    flex-direction: column;
+  }
+}

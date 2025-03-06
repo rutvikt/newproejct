@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+.lecturetopics {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; // Ensures both left & right divs have the same height
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+
+    &__left {
+        width: 65%;
+        padding: 2.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lecturetopics__main-heading {
+        color: #0098ee;
+        font-size: 2.7rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    .lecturetopics__underline {
+        width: 100%;
+        height: 1.5px;
+        background-color: #0098ee;
+        margin: 1.5rem 0;
+    }
+
+    .lecturetopics__heading {
+        color: #0098ee;
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .lecturetopics__description {
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        color: black;
+    }
+
+    // Button Style (Each Lecture)
+    .lecturetopics__button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #0098ee;
+        background-color: white;
+        border: 1px solid #0098ee;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        margin-top: 10px;
+        width: fit-content; // Ensures button width only matches content
+
+        &:hover {
+            background-color: #0077cc;
+            color: white;
+            transform: scale(1.05);
+        }
+    }
+
+    // Right Side - Image and Experience
+    &__right {
+        padding-bottom: 2.2rem;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lecturetopics__image {
+        width: 100%;
+        height: 100%; // Ensures image fills the right div
+        object-fit: cover; // Maintains aspect ratio and fills the container
+        object-position: left; // Shows the left part of the image
+    }
+
+    .lecturetopics__experience-heading {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .lecturetopics__experience-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        font-weight: 300;
+        color: white;
+    }
+}
+
+/* 📌 Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    .lecturetopics {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+
+        &__left,
+        &__right {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .lecturetopics__button {
+            width: fit-content; 
+            text-align: center;
+        }
+
+        .lecturetopics__image {
+            height: 300px; // Adjusted for better fit in tablet view
+        }
+    }
+}
+
+/* 📌 Mobile View (Up to 768px) */
+@media (max-width: 768px) {
+    .lecturetopics {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem;
+
+        &__left,
+        &__right {
+            width: 100%;
+            padding: 0;
+        }
+
+        .lecturetopics__button {
+            width: fit-content;
+            text-align: center;
+            margin: 0 auto; // Center horizontally
+            display: flex;
+            justify-content: center;
+        }
+
+        .lecturetopics__image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+}
+
