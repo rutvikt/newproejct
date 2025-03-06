@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Banner2.scss';
 import image2 from '../../assets/Images/image2.jpg';
-import image3 from '../../Assets/Images/image3.jpg';
+import image3 from '../../assets/Images/image3.jpg';
 
 const Banner2 = () => {
   const [activeSection, setActiveSection] = useState(1); // State to track active section
