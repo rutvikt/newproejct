@@ -2,17 +2,17 @@
 
 .newsletter {
   max-width: 100%;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: 0rem auto;
+  padding: 3rem;
   text-align: center;
-  background-color: #0098ee;
+  background-color: #F2F6D0;
 
   &__heading {
     font-family: "Noto Sans", sans-serif;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-weight: 300;
-    color: white;
+    color:#443627;
 
     @media (max-width: 768px) {
       font-size: 1.7rem;
@@ -46,7 +46,7 @@
 
     font-size: 1.2rem;
     font-weight: 400;
-    color: white;
+    color: #443627;
     width: 80px; /* Fixed width to align labels */
     text-align: right; /* Align text to the right */
   }
@@ -54,13 +54,13 @@
   &__input {
     flex: 1; /* Take remaining space */
     padding: 0.7rem;
-    border: 1px solid #ddd;
+    border: 1px solid #443627;
     border-radius: 4px;
     font-size: 1rem;
     background-color: transparent;
     font-family: "Noto Sans", sans-serif;
 
-    color: white; /* User input text color is now white */
+    color: #443627; /* User input text color is now white */
 
     &::placeholder {
       color: rgba(255, 255, 255, 0.7); /* Placeholder text slightly transparent white */
@@ -68,7 +68,7 @@
 
     &:focus {
       outline: none;
-      border-color: #fff;
+      border-color: #EFDCAB;
       box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
     }
   }
@@ -83,10 +83,10 @@
 
   &__button {
     font-family: "Noto Sans", sans-serif;
-    background-color: white;
-    color: #0098ee;
+    background-color: #443627;
+    color: #EFDCAB;
     padding: 0.7rem 1.5rem;
-    border: 1px solid white;
+    border: 1px solid #443627;
     border-radius: 25px;
     font-size: 1.1rem;
     width: fit-content;
@@ -94,9 +94,9 @@
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #0098ee;
-      color: white;
-      border: 1px solid white;
+      background-color: #EFDCAB;
+      color: #443627;
+      border: 1px solid #443627;
       transform: translateY(-2px);
     }
 
@@ -113,6 +113,9 @@
     font-family: "Noto Sans", sans-serif;
   }
 
+  .newsletter__disclaimer{
+    color: #443627;
+  }
   @media (max-width: 600px) {
     &__field {
       flex-direction: column;

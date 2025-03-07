@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem 5%;
-    background-color: white;
+    background-color: #F2F6D0;
     // border-top: 1px solid #ddd;
     flex-wrap: wrap; // Ensures responsiveness
 
@@ -30,7 +30,7 @@
         font-size: 1.3rem;
         font-weight: 300;
         margin-bottom: 1rem;
-        color: #0098ee;
+        color: #443627;
     }
 
     &__subheading {
@@ -38,14 +38,14 @@
         font-size: 1.1rem;
         font-weight: 350;
         margin-bottom: 0.8rem;
-        color: #0098ee;
+        color: #443627;
     }
 
     &__text {
         font-family: "Noto Sans", sans-serif;
         font-size: 0.9rem;
         line-height: 1.6;
-        color: black;
+        color: #443627;
         margin-bottom: 0.5rem;
 
         &:last-child {
@@ -58,7 +58,7 @@
         font-size: 2rem;
         margin-top: 3rem;
         font-weight: 300;
-        color: #0098ee;
+        color: #443627;
     }
 
     @media (max-width: 768px) {

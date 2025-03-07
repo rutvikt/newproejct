@@ -36,7 +36,7 @@
     top: 35%; // Adjust as needed for desktop
     left: 4rem; // Distance from the left edge
     z-index: 2; // Ensure content is above the banner
-    color: #fff; // White text for better contrast
+    color: #f2f6D0; // White text for better contrast
 
     .banner__text {
       p {
@@ -52,11 +52,11 @@
 
       .icon {
         font-size: 1.5rem;
-        color: #fff; // White icons
+        color: #D98324; // White icons
         transition: color 0.3s ease;
 
         &:hover {
-          color: #007bff; // Hover color
+          color: #443627; // Hover color
         }
       }
     }
@@ -67,7 +67,7 @@
 
       margin-top: 4rem; // Space between icons and name
       font-size: 5rem; // Big font size
-      color: #0098ee; // Blue color
+      color: #D98324; // Blue color
       transition: color 0.3s ease;
 
      

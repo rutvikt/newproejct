@@ -5,10 +5,12 @@
   font-optical-sizing: auto;
   font-weight: 300; // Default weight
   font-style: normal;
+  // background-color: #F2F6D0;
 }
 
 .banner2 {
   display: flex;
+ 
   width: 100%; // Full width
   height: auto; // Adjust height based on content
 
@@ -59,8 +61,9 @@
 // New Section Styles
 .content-section {
   display: flex;
+  background-color: #F2F6D0;
   width: 100%; // Full width
-  margin-top: 2rem; // Space between banner and section
+  margin-top: 0rem; // Space between banner and section
 
   &__left {
     font-family: "Noto Sans", sans-serif;
@@ -73,13 +76,13 @@
     justify-content: center;
     gap: 1.5rem; // Space between sections
     padding: 1.5rem;
-    background-color: white; // Light gray background
+    background-color: #F2F6D0; // Light gray background
     border-radius: 10px;
 
     .section-item {
       padding: 1rem;
       cursor: pointer;
-      background-color: white;
+      background-color: #F2F6D0;
       transition: background-color 0.3s ease, transform 0.2s ease-in-out;
       font-weight: 300;
       text-align: center;
@@ -87,12 +90,12 @@
     //   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 
       &:hover {
-        background-color: white;
+        background-color: #F2F6D0;
         transform: translateY(-2px);
       }
 
       &.active {
-        color: #007bff; // Blue text color for active section
+        color: #443627; // Blue text color for active section
         font-weight: 400;
         position: relative;
       
@@ -101,7 +104,7 @@
           display: block;
           width: 100%;
           height: 3px; // Thickness of the underline
-          background-color: #007bff; // Blue underline
+          background-color: #443627; // Blue underline
           position: absolute;
           bottom: -3px; // Adjust position
           left: 0;
@@ -114,7 +117,7 @@
   &__right {
     width: 50%; // 50% width for right side
     padding: 1.5rem;
-    background-color: white;
+    background-color: #F2F6D0;
     border-radius: 10px;
     // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -124,7 +127,7 @@
       font-size: 2rem;
       margin-bottom: 1rem;
       font-weight: 700;
-      color: #333;
+      color: #443627;
     }
 
     p {
@@ -133,7 +136,7 @@
       font-size: 1rem;
       font-weight: 300;
       line-height: 1.8;
-      color: #007bff;
+      color: #443627;
       white-space: pre-line; // Ensures paragraph breaks are maintained
     }
   }
