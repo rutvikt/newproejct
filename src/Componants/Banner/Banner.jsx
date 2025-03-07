@@ -34,7 +34,7 @@ const Banner = () => {
           </div>
           {/* Your Name */}
           <div className="banner__name">
-            NIKUNJ KOLADIYA
+            NIKUNJ KOLADIA
           </div>
         </div>
       </div>
