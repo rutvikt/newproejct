@@ -6,13 +6,13 @@
     padding: 7% 7%;
     margin: 0rem auto;
     text-align: center;
-    background: #F2F6D0;
+    background: #011F4B;
     
   gap: 0; 
 
     .slider3-title {
         font-family: "Noto Sans", sans-serif;
-        color: #443627;
+        color: #FAFAFA;
         font-size: 2.2rem;
         font-weight: 300;
         margin-bottom: 1.5rem;
@@ -28,7 +28,7 @@
             gap: 20px;
 
             .review-card {
-                background: #F2F6D0;
+                background: #011F4B;
                 padding: 20px;
                 border-radius: 8px;
                 // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -44,6 +44,7 @@
                     font-size: 1rem;
                     font-style: italic;
                     margin-bottom: 10px;
+                    color: #FAFAFA;
                 }
 
                 .review-author {
@@ -51,7 +52,7 @@
 
                     font-size: 0.9rem;
                     font-weight: 400;
-                    color: #443627;
+                    color: #FAFAFA;
                 }
             }
         }
@@ -69,12 +70,12 @@
 
             button:before {
                 font-size: 12px;
-                color: #443627;
+                color: #FAFAFA;
                 opacity: 0.75;
             }
 
             &.slick-active button:before {
-                color: #443627;
+                color: #FAFAFA;
                 opacity: 1;
             }
         }

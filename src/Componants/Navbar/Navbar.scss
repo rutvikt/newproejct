@@ -13,7 +13,7 @@
 
   // Apply background for mobile when menu is open
   @media (max-width: 768px) {
-    background-color: rgba(0, 0, 0, 0.8); // Dark background for better visibility
+    background-color: #443627; // Dark background for better visibility
     transition: background-color 0.3s ease;
   }
 
@@ -23,7 +23,7 @@
     margin-left: 26px;
     font-size: 2rem;
     font-weight: bold;
-    color: #D98324;
+    color: #D35400;
 
     @media (max-width: 768px) {
       margin-left: 0;
@@ -39,7 +39,7 @@
 
     a {
       text-decoration: none;
-      color: #D98324 ;
+      color: #FAFAFA ;
       font-size: 1.6rem;
       font-family: "Noto Sans", sans-serif;
       font-weight: 400;
@@ -59,7 +59,7 @@
       left: 0;
       width: 100%;
       height: 100vh; // Full height
-      background-color: #0098ee; // Dark background for mobile menu
+      background-color: #011F4B; // Dark background for mobile menu
       padding-top: 5rem; // Space for the navbar
       text-align: center;
       transition: transform 0.5s ease;
@@ -92,7 +92,7 @@
     .hamburger__line {
       width: 30px;
       height: 3px;
-      background-color: #fff;
+      background-color: #D35400;
       transition: transform 0.5s ease, opacity 0.5s ease;
 
       &.active:nth-child(1) {

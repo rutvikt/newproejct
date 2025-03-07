@@ -54,7 +54,7 @@ const Lecturetopics = () => {
       <div className="lecturetopics__right">
         <img src={image5} alt="Lecture Experience" className="lecturetopics__image" />
         {/* <div className="lecturetopics__underline"></div> */}
-        <div style={{backgroundColor: "#443627" , padding: "1rem"}}>
+        <div style={{backgroundColor: "#011F4B" , padding: "1rem"}}>
         <h2 className="lecturetopics__experience-heading">My Lecture Experience</h2>
         <p className="lecturetopics__experience-description">
           This section describes my experience with lectures, including key achievements and insights.

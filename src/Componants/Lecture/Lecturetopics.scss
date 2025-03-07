@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: stretch; // Ensures both left & right divs have the same height
     width: 100%;
-    background-color: #F2F6D0;
+    background-color: #FAFAFA;
     font-family: 'Noto Sans', sans-serif;
 
     &__left {
@@ -17,7 +17,7 @@
     }
 
     .lecturetopics__main-heading {
-        color: #443627;
+        color: #011F4B;
         font-size: 2.7rem;
         font-weight: 300;
         margin-bottom: 1rem;
@@ -26,12 +26,12 @@
     .lecturetopics__underline {
         width: 100%;
         height: 1.5px;
-        background-color: #443627;
+        background-color: #011F4B;
         margin: 1.5rem 0;
     }
 
     .lecturetopics__heading {
-        color: #443627;
+        color: #011F4B;
         font-size: 1.8rem;
         font-weight: 300;
         margin-top: 1.5rem;
@@ -43,7 +43,7 @@
         font-weight: 300;
         line-height: 1.6;
         margin-bottom: 1rem;
-        color: #443627;
+        color: #011F4B;
     }
 
     // Button Style (Each Lecture)
@@ -52,9 +52,9 @@
         padding: 10px 20px;
         font-size: 1rem;
         font-weight: 300;
-        color: #443627;
-        background-color: #F2F6D0;
-        border: 1px solid #443627;
+        color: #011F4B;
+        background-color: #FAFAFA;
+        border: 1px solid #011F4B;
         border-radius: 25px;
         cursor: pointer;
         transition: 0.3s ease-in-out;
@@ -88,12 +88,12 @@
     }
 
     .lecturetopics__experience-heading {
-        color: #F2F6D0;
+        color: #FAFAFA;
         font-size: 1.8rem;
         font-weight: 300;
         margin-top: 1.5rem;
         margin-bottom: 0.5rem;
-        background-color: #443627;
+        background-color: #011F4B;
         
     }
 
@@ -101,8 +101,8 @@
         font-size: 1.1rem;
         line-height: 1.6;
         font-weight: 300;
-        color: #F2F6D0;
-        background-color: #443627;
+        color: #FAFAFA;
+        background-color: #011F4B;
         
     }
 }
